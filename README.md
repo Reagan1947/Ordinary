@@ -1,30 +1,46 @@
-# CNBlog Custom Theme Ordinary
+<h1 align="center">
+  <br>
+  <img src="https://github.com/Reagan1947/KityMinder-Plus/blob/main/mind-icon.png?raw=true" alt="The Ordinary" width="170">
+  <br>
+  The Ordinary
+  <br>
+</h1>
+
+<h4 align="center" font-weight:bold;">CNblog blog template theme.</h4>
+<p align="center">
+<img src="https://img.shields.io/badge/License-MIT-%23373737">
+<img src="https://img.shields.io/badge/Frame-Tona-lightgrey">
+<img src="https://img.shields.io/badge/Dependency-VITE-lightgrey">
+</p>
+
+
+## 1.1 CNBlog Custom Theme Ordinary
 
 This is a CNblog blog template theme built on [Tona](https://github.com/guangzan/tona).
 
-## Quick Start
+## 1.2 Quick Start
 
 If you wish to customize or further develop your blog theme, please refer to the following steps:
 
-### Install Dependencies
+### 1.2.1 Install Dependencies
 
 ```bash
 pnpm install
 ```
 
-### Development Command
+### 1.2.2 Development Command
 
 ```bash
 pnpm dev
 ```
 
-### Building Command
+### 1.2.3 Building Command
 
 ```bash
 pnpm build
 ```
 
-## Project Struct
+## 1.3 Project Struct
 
 ```
 .
@@ -35,9 +51,9 @@ pnpm build
 └── package.json     # Project Settings
 ```
 
-## Development Guide
+## 1.4 Development Guide
 
-### Create Plugin
+### 1.4.1 Create Plugin
 
 In `src/main.js`, you can register plugins using `createTheme().use()`:
 
@@ -52,12 +68,15 @@ function myPlugin() {
 createTheme().use(myPlugin)
 ```
 
-### Writing CSS Styles
+### 1.4.2 Writing CSS Styles
 
 Write your theme styles in `src/style.css`.
 
-## More information and how to use the theme
+## 1.5 More information and how to use the theme
 
 - [Tona Document](https://github.com/guangzan/tona)
 - [Vite Document](https://vitejs.dev/)
 
+## 1.6 LICENSE
+
+This content is distributed under the MIT license. 
