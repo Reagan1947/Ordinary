@@ -3,12 +3,16 @@ import './style.css'
 
 function blogTitle() {
 
-  const div = document.createElement('div')
-  div.textContent = 'The Ordinary!'
-  div.className = 'tona-h1'
+  const original_header_title = document.getElementById('Header1_HeaderTitle')
+  const blog_path = original_header_title.getAttribute('href')
+  const header_title = document.getElementById('Header1_HeaderTitle')
+  const a = document.createElement('a')
+  a.textContent = header_title.innerText
+  a.className = 'tona-h1'
+  a.setAttribute('href', blog_path)
 
   const body = document.querySelector('body')
-  body.prepend(div)
+  body.prepend(a)
 }
 
 function setBlogLogo() {
@@ -24,12 +28,21 @@ function setBlogLogo() {
   const blog_logo = document.getElementById('blogLogo')
   blog_logo.removeAttribute('src')
   // TODO: 使用变量进行替换
-  blog_logo.setAttribute('src', 'https://youke.xn--y7xa690gmna.cn/s1/2026/02/04/698256fb42dbe.webp')
+  const opts = window.opts
+  if (opts && opts.theme.avatar) {
+    blog_logo.setAttribute('src', opts.theme.avatar)
+  } else {
+    blog_logo.setAttribute('src', 'https://youke.xn--y7xa690gmna.cn/s1/2026/02/04/698256fb42dbe.webp')
+  }
 
   const about_me = document.getElementById('lnkBlogLogo')
   about_me.removeAttribute('href')
   // TODO: 使用变量进行替换
-  about_me.setAttribute('href', 'https://github.com/Reagan1947')
+  if (opts && opts.theme.aboutme) {
+    about_me.setAttribute('href', opts.theme.aboutme)
+  } else {
+    about_me.setAttribute('href', '#')
+  }
 }
 
 function modify_footer() {
@@ -37,7 +50,14 @@ function modify_footer() {
   const root_footer = document.getElementById('footer')
 
   const div = document.createElement('div')
-  div.textContent = '© Theme frame from TONA | Powered by CNBLOG'
+  const opts = window.opts
+
+  if (opts && opts.signature.enable) {
+    root_footer.innerHTML = opts.signature.contents
+  } else {
+    div.textContent = '© Theme frame from TONA | Powered by CNBLOG'
+
+  }
   div.className = 'custom-footer'
   root_footer.prepend(div)
 
@@ -128,6 +148,17 @@ function processPager() {
     preview_page_button.classList.remove('href-dsiabled')
     preview_page_button.removeAttribute('href')
     preview_page_button.setAttribute('href', preview_page_link)
+  }
+
+  // 如果上一页和下一页都没有则不展示
+  const disabled_items = document.querySelectorAll('.href-dsiabled')
+  if (disabled_items && disabled_items.length == 2) {
+    const preview_page_button = document.querySelector('.preview-page')
+    preview_page_button.classList.add('display-none')
+    const next_page_button = document.querySelector('.next-page')
+    next_page_button.classList.add('display-none')
+    const page_spliter = document.querySelector('.page-spliter')
+    page_spliter.classList.add('display-none')
   }
 }
 
