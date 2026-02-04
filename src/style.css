@@ -1,3 +1,184 @@
+body {
+  width: 1190px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#top_nav {
+  width: 100vw;
+}
+
+#nav_main {
+  display: none;
+}
+
+#home {
+  width: 1190px;
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#header {
+  width: 280px;
+  height: 500px;
+  border-left: 1px solid #cccccc;
+  position: sticky;
+  top: 0;
+}
+
+#blogTitle {
+  border-bottom: 1px solid #cccccc;
+  padding-left: 30px;
+}
+
+#main {
+  width: 899px;
+}
+
+#mainContent {
+  border-left: 1px solid #cccccc;
+
+}
+
+#footer {
+  width: 1190px;
+}
+
+.logo-title {
+  display: block;
+  color: #3d3d3d;
+  margin-bottom: 30px;
+}
+
+#blogLogo {
+  width: 100px;
+  height: 100px;
+}
+
 .tona-h1 {
-  color: red;
+  border-bottom: 1px solid #cccccc;
+  width: 1190px;
+  padding: 20px 0;
+  font-size: 30px;
+  color: #3d3d3d;
+}
+
+ul,
+li {
+  list-style: none;
+  color: #3d3d3d;
+  padding-left: 15px;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+#navList {
+  border-bottom: 1px solid #cccccc;
+}
+
+.blogStats {
+  display: none;
+}
+
+.postTitle {
+  padding-bottom: 25px;
+  font-size: 27px;
+  color: #3d3d3d;
+}
+
+.dayTitle {
+  display: none;
+}
+
+.day {
+  padding-right: 50px;
+}
+
+.c_b_p_desc {
+  font-size: 13px;
+  color: #848484;
+  line-height: 23px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.c_b_p_desc_readmore {
+  display: none;
+}
+
+.postDesc {
+  padding-top: 15px;
+  font-size: 13px;
+  color: #848484;
+  margin-bottom: 100px;
+}
+
+.post-view-count,
+.post-comment-count,
+.post-digg-count {
+  display: none;
+}
+
+.postTitle,
+.postCon,
+.postDesc {
+  padding-left: 25px;
+}
+
+.postCon {
+  border-bottom: 1px solid #cccccc;
+}
+
+#sideBar{
+  display: none;
+}
+
+
+#footer {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.footer-copyright,
+#footer_site_link,
+.footer-icp {
+  display: none;
+}
+
+.custom-footer{
+  font-size: 13px;
+}
+
+.next-page,
+.preview-page {
+  margin-left: 26px;
+  margin-right: 26px;
+}
+
+.topicListFooter,
+#nav_next_page {
+  display: none;
+}
+
+.href-dsiabled{
+    pointer-events: none;  /* 不响应点击 */
+    color: #999;
+}
+
+.display-none {
+  display: none;
 }
