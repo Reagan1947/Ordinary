@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center" font-weight:bold;">CNblog blog template theme.</h4>
+<h4 align="center" font-weight:bold;">CNBlog blog template theme.</h4>
 <p align="center">
 <img src="https://img.shields.io/badge/License-MIT-%23373737">
 <img src="https://img.shields.io/badge/Frame-Tona-lightgrey">
