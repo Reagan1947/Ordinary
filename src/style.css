@@ -334,3 +334,12 @@ p {
 .post-meta-tags {
   font-size: 15px;
 }
+
+#post_detail a {
+  text-decoration: underline;
+  color: rgb(59, 69, 78);
+}
+
+#cb_post_title_url {
+  text-decoration: none !important;
+}
