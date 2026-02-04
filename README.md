@@ -1,8 +1,8 @@
 <h1 align="center">
   <br>
-  <img src="https://github.com/Reagan1947/KityMinder-Plus/blob/main/mind-icon.png?raw=true" alt="The Ordinary" width="170">
+  <img src="https://github.com/Reagan1947/Ordinary/blob/main/src/img/ordinary-theme-icon.jpg?raw=true" alt="The Ordinary" width="100">
   <br>
-  The Ordinary
+ Ordinary
   <br>
 </h1>
 
