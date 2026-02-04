@@ -1,10 +1,12 @@
 body {
   width: 1190px;
+  height: 100vh;
   display: flex;
   position: relative;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  align-items: flex-start;
 }
 
 #top_nav {
@@ -23,6 +25,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
+  height: 90vh;
 }
 
 #header {
@@ -143,7 +146,7 @@ a {
   border-bottom: 1px solid #cccccc;
 }
 
-#sideBar{
+#sideBar {
   display: none;
 }
 
@@ -151,6 +154,7 @@ a {
 #footer {
   margin-top: 150px;
   text-align: center;
+  align-self: flex-end;
 }
 
 .footer-copyright,
@@ -159,7 +163,7 @@ a {
   display: none;
 }
 
-.custom-footer{
+.custom-footer {
   font-size: 13px;
 }
 
@@ -171,12 +175,14 @@ a {
 
 .topicListFooter,
 #nav_next_page {
-  display: none;
+  visibility: hidden;
+  position: absolute;
 }
 
-.href-dsiabled{
-    pointer-events: none;  /* 不响应点击 */
-    color: #999;
+.href-dsiabled {
+  pointer-events: none;
+  /* 不响应点击 */
+  color: #999;
 }
 
 .display-none {
