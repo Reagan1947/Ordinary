@@ -1,0 +1,18 @@
+{
+  "name": "package",
+  "description": "A modern, clean Tona theme with JavaScript starter template.",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "tona": "latest"
+  },
+  "devDependencies": {
+    "vite": "latest",
+    "tona-vite": "latest"
+  }
+}
