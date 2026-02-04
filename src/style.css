@@ -90,6 +90,8 @@ a {
 }
 
 #navList {
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #cccccc;
 }
 
@@ -173,6 +175,14 @@ a {
   margin-right: 26px;
 }
 
+.next-page,
+.preview-page,
+.page-spliter {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
 .topicListFooter,
 #nav_next_page {
   visibility: hidden;
@@ -187,4 +197,140 @@ a {
 
 .display-none {
   display: none;
+}
+
+.postBody {
+  padding: 0 30px;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 30px !important;
+  margin-bottom: 14px !important;
+}
+
+mark {
+  background: #d5d5d5;
+  padding: 0 2px 0 2px;
+  margin: 0 2px 0 2px;
+  border-radius: 3px;
+}
+
+ul,
+ol {
+  padding-left: 20px !important;
+  line-height: 2;
+  font-size: 16px;
+  margin: 0 !important;
+}
+
+li {
+  margin: 0;
+  padding-left: 6px !important;
+}
+
+:is(dir, menu, ol, ul) :is(dir, menu, ul) {
+  list-style-type: circle !important;
+}
+
+ul li::marker {
+  color: #000;
+  font-size: 17px;
+}
+
+code {
+  word-wrap: break-word !important;
+  word-break: normal !important;
+  font-size: 13px !important;
+  text-rendering: geometricprecision;
+  text-wrap-mode: wrap;
+  font-weight: 600;
+}
+
+#blog_post_info {
+  display: none;
+}
+
+#blog-comments-placeholder {
+  display: none;
+}
+
+#comment_form_container {
+  display: none;
+}
+
+#under_post_kb {
+  display: none;
+}
+
+#under_post_card2 {
+  display: none;
+}
+
+#under_post_card1 {
+  display: none;
+}
+
+#ad_t2 {
+  display: none;
+}
+
+
+#comment_nav {
+  display: none;
+}
+
+p {
+  box-sizing: border-box;
+  color: rgb(59, 69, 78);
+  display: block;
+  font-family: "Glow Sans SC", -apple-system, sans-serif;
+  font-size: 15.96px;
+  font-style: normal;
+  font-weight: 500;
+  line-break: after-white-space;
+  line-height: 25.536001px;
+  margin-block-end: 14px;
+  margin-block-start: 14px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  orphans: 4;
+  overflow-wrap: break-word;
+  position: relative;
+  text-rendering: geometricprecision;
+  text-wrap-mode: wrap;
+  white-space-collapse: preserve;
+  word-break: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-nbsp-mode: space;
+  -webkit-user-modify: read-write;
+}
+
+#sidebar_news_container :not(pre, div)>code,
+.cnblogs-markdown :not(pre, div)>code,
+.blogpost-body:not(.cnblogs-markdown) :not(pre, div, td)>code {
+  color: #252525;
+}
+
+#post_next_prev {
+  display: none;
+}
+
+#cnblogs_ch {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+#cnblogs_ch>a {
+  color: #b7b7b7;
+}
+
+.post-meta-tags {
+  font-size: 15px;
 }
